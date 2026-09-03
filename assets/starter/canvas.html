@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[[海报标题]]</title>
+  <style>
+    :root {
+      --深蓝: #17324d;
+      --辅蓝: #72a6c1;
+      --浅蓝: #dcebf2;
+      --橙色: #e57432;
+      --浅橙: #fae9dd;
+      --正文: #2d363c;
+      --次文: #68747b;
+      --暖底: #f4f0e5;
+      --纸白: #fbfaf6;
+      --细线: #d2dade;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #d8d8d4; color: var(--正文); }
+    body {
+      width: 1200px;
+      margin: 0 auto;
+      font-family: "Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", sans-serif;
+    }
+    h1, h2, h3, p { margin: 0; }
+    .poster {
+      width: 1200px;
+      min-height: 1600px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 8% 4%, rgba(229, 116, 50, .08), transparent 15%),
+        radial-gradient(circle at 94% 20%, rgba(114, 166, 193, .10), transparent 18%),
+        var(--纸白);
+    }
+    .content { width: 1080px; margin: 0 auto; }
+    .hero { padding: 64px 0 46px; }
+    .hero h1 { color: var(--深蓝); font-size: 64px; line-height: 1.12; font-weight: 950; }
+    .hero p { max-width: 980px; margin-top: 18px; color: var(--次文); font-size: 18px; line-height: 1.75; }
+    .draft-note {
+      margin: 28px 0 72px;
+      padding: 28px;
+      border: 1px dashed var(--辅蓝);
+      background: rgba(220, 235, 242, .38);
+      color: var(--深蓝);
+      font-size: 18px;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <main class="poster">
+    <header class="hero content">
+      <h1>[[海报标题]]</h1>
+      <p>[[核心说明]]</p>
+    </header>
+
+    <!-- 低保真阶段可保留下方说明，正式稿必须删除。 -->
+    <div class="draft-note content">[[在此构建海报主体内容]]</div>
+  </main>
+</body>
+</html>

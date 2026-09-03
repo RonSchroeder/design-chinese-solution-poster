@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文解决方案海报"
+  short_description: "制作中文企业海报并完成配图、渲染与视觉质量检查"
+  default_prompt: "使用 $design-chinese-solution-poster，制作全中文可见文字、可编辑且经过视觉验证的竖版企业海报。"
